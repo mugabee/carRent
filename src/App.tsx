@@ -1,11 +1,20 @@
 import React from 'react';
 import './App.css';
+import tw from "twin.macro";
 
-function App() {
-  return <div className="App">
-      hello  
-   </div>;
+const AppContainer = styled.div`
+  ${tw`
+    w-full
+    h-full
+    flex
+    flex-col
+  `};
+`;
 
+export function HomePage() {
+  return (
+    <PageContainer>
+      light up the darkness
+    </PageContainer>
+  );
 }
-
-export default App;
